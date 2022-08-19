@@ -8,4 +8,6 @@ jobs:
         with:
           node-version: '16.14'
       - run: yarn install
-      - run: yarn test
+
+      # --watchがついたyarn testではtest後に終了しないため、1回だけ実行
+      - run: yarn jest
