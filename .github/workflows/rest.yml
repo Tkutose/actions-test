@@ -1,7 +1,6 @@
-on: push
+on: workflow_dispatch
 jobs:
   rest-api:
     runs-on: ubuntu-latest
     steps:
-      # - run: brew install jq
       - run: curl https://api.coindesk.com/v1/bpi/currentprice.json | jq
