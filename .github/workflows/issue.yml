@@ -5,6 +5,8 @@ jobs:
   issue-content:
     runs-on: ubuntu-latest
     steps:
+      - name: action
+        run: echo "${{ github.event.action }}"
       - name: id
         run: echo "${{ github.event.issue.id }}"
       - name: title
