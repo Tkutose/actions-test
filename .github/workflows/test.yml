@@ -1,13 +1,13 @@
-on: push
-jobs:
-  auto-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2-beta
-        with:
-          node-version: '16.14'
-      - run: yarn install
+# on: push
+# jobs:
+#   auto-test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: actions/setup-node@v2-beta
+#         with:
+#           node-version: '16.14'
+#       - run: yarn install
 
-      # --watchがついたyarn testではtest後に終了しないため、1回だけ実行
-      - run: yarn jest
+#       # --watchがついたyarn testではtest後に終了しないため、1回だけ実行
+#       - run: yarn jest
