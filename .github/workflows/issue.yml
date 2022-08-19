@@ -1,0 +1,15 @@
+on: 
+  issues:
+    types: [opened, edited]
+jobs:
+  issue-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: id
+        run: echo "${{ github.event.issue.id }}"
+      - name: title
+        run: echo "${{ github.event.issue.title }}"
+      - name: number
+        run: echo "${{ github.event.issue.number }}"
+      - name: body
+        run: echo "${{ github.event.issue.body }}"
