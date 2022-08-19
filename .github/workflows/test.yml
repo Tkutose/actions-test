@@ -1,0 +1,10 @@
+on: push
+jobs:
+  auto-test:
+    runs-on: ubuntu-latest
+      steps:
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '16.14'
+      - run: yarn install
+      - run: yarn test
