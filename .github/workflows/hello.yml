@@ -1,7 +1,6 @@
 on: workflow_dispatch
 jobs:
   hello-world:
-    if: false
     runs-on: ubuntu-latest
     steps:
       - run: echo "hello world"
