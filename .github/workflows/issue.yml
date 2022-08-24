@@ -16,4 +16,4 @@ jobs:
       - name: body
         run: echo "${{ github.event.issue.body }}"
       - name: labels
-        run: echo "${{ github.event.issue.labels[0] }}"
+        run: echo "${{ github.event.issue.labels[0].name }}"
